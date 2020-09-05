@@ -4,7 +4,7 @@
   "private": true,
   "proxy": "http://localhost:5678",
   "scripts": {
-    "start": "concurrently -p \"[{name}]\" -n \"CLIENT,SERVER\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"yarn run start:client\" \"yarn run start:server\"",
+    "start": "concurrently -p \"[{name}]\" -n \"C,S\" -c \"bgBlue.bold,bgYellow.bold,bgGreen.bold\" \"yarn run start:client\" \"yarn run start:server\"",
     "start:client": "react-scripts start",
     "start:server": "nodemon server/index.js",
     "build": "react-scripts build",
